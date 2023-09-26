@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "c4d0f4c7-13de-4192-9662-b01abccd1bb8",
+		"name": "zocket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16401131"
+	},
+	"item": [
+		{
+			"name": "create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\" :\"Increase the catalouge sales\",\r\n  \"platform\" : \"google\",\r\n  \"desription\" : \"Drive the sales of your catalouge and get more leads\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/task/create-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"task",
+						"create-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/task/get-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"task",
+						"get-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Coffee Ice Cream\",\r\n        \"image\": \"coffee.jpg\",\r\n        \"text\": \"Rich and bold coffee-flavored ice cream\",\r\n        \"price\": 372.00\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/product/create-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product",
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/product/get-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product",
+						"get-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"itachi\",\r\n    \"email\": \"itachi@example.com\",\r\n    \"password\": \"naruto\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iml0YWNoaUBleGFtcGxlLmNvbSIsImlkIjoiNjUxMmY4YmJkOTY3MWM2MWJkN2VlNDcyIiwiaWF0IjoxNjk1NzQyMTM5fQ.czVpWGJCJykP-3h86Tni84eFdEVDuQhAl0jaNG3xO0Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"itachi\",\r\n    \"email\": \"itachi@example.com\",\r\n    \"password\": \"naruto\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/user/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"user",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create campaign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campaignName\": \"camp2\",\r\n    \"startDate\": \"2023-07-01T00:00:00Z\",\r\n    \"endDate\": \"2023-08-15T23:59:59Z\",\r\n    \"clicks\": 0,\r\n    \"location\": \"Online\",\r\n    \"platform\": \"facebook\",\r\n    \"status\": 0,\r\n    \"budget\": 5000,\r\n    \"targetRadius\": 10,\r\n    \"image\": \"summer-sale.jpg\",\r\n    \"description\": \"Exciting summer sale campaign!\",\r\n    \"userId\": \"6512f8bbd9671c61bd7ee472\",\r\n    \"isOn\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/campaign/create-campaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"campaign",
+						"create-campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get campaign",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "edit campaign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/campaign/edit-campaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"campaign",
+						"edit-campaign"
+					],
+					"query": [
+						{
+							"key": "campaignId",
+							"value": "6512f8bbd9671c61bd7ee472",
+							"disabled": true
+						},
+						{
+							"key": "days",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "firs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete campaign",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/campaign/delete-campaign?campaignId=6512fc89d9671c61bd7ee47e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"campaign",
+						"delete-campaign"
+					],
+					"query": [
+						{
+							"key": "campaignId",
+							"value": "6512fc89d9671c61bd7ee47e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
