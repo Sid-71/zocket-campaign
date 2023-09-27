@@ -8,3 +8,8 @@ list of api
 5. get campaign of a particular user using filters on name , date , status and platform .
 
 Note  : status = (0: live now, 1: paused, 2: exhausted).
+
+
+Extra Bonus Features done by me :
+1 . for storing user information I have used bcryptjs for storing password in secure manner 
+2. used jwt for authenticaiton and added middlewares 
