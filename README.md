@@ -10,6 +10,8 @@ list of api
 Note  : status = (0: live now, 1: paused, 2: exhausted).
 
 
-Extra Bonus Features done by me 
-1 . for storing user information I have used bcryptjs for storing password in secure manner 
-2. used jwt for authenticaiton and added middlewares 
+Extra Bonus Features
+
+1 . for storing user information I have used bcryptjs for storing password in secure manner .
+
+2. used jwt for authenticaiton and added middlewares .
